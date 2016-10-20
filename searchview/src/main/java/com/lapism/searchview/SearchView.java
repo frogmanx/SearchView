@@ -215,7 +215,7 @@ public class SearchView extends FrameLayout implements View.OnClickListener {
         // mRecyclerView.setNestedScrollingEnabled(false);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(mContext));
         mRecyclerView.setItemAnimator(null);
-        mRecyclerView.setLayoutTransition(getRecyclerViewLayoutTransition());
+        //mRecyclerView.setLayoutTransition(getRecyclerViewLayoutTransition());
         mRecyclerView.setVisibility(View.GONE);
         mRecyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
@@ -225,7 +225,7 @@ public class SearchView extends FrameLayout implements View.OnClickListener {
                     hideKeyboard();
                 } else {
                     if (newState == RecyclerView.SCROLL_STATE_IDLE) {
-                        mRecyclerView.setLayoutTransition(getRecyclerViewLayoutTransition());
+                       // mRecyclerView.setLayoutTransition(getRecyclerViewLayoutTransition());
                     }
                 }
             }
